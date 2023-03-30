@@ -65,7 +65,7 @@ export default App
 
 ```
 
-[代码参考](../../commit/76cc33e3bc7702234d77a62f89ef14b2d6e26a42)
+这一步骤 [代码参考](../../commit/5c9c85d0d5307af0aea1699db6d11878e8e872b4)
 
 
 
@@ -133,6 +133,9 @@ export default App
 - **tailwindcss.config.js** 配置文件里的 **content** 是否配置了
 - **index.css** 是否加入了 **tailwindcss** 的样式引入
 - 在 **main.tsx** 中是否引入了 **index.css** 
+
+这一步骤 [代码参考](../../commit/61cb4372e6c8f3615190e7991a9139dbbee446be)
+
 
 
 ## 3. 集成 **Redux**
