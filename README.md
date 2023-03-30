@@ -65,7 +65,7 @@ export default App
 
 ```
 
-[代码参考](/commit/76cc33e3bc7702234d77a62f89ef14b2d6e26a42)
+[代码参考](./commit/76cc33e3bc7702234d77a62f89ef14b2d6e26a42)
 
 
 
