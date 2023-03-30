@@ -146,5 +146,7 @@ export default App
 pnpm add @reduxjs/toolkit react-redux
 ```
 
+这一步骤的[代码参考](../../commit/307efc2c149dc0569b80d5e85c5aa66bcb5f3716)
+
 
 4. 集成测试
