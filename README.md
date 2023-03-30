@@ -149,4 +149,17 @@ pnpm add @reduxjs/toolkit react-redux
 这一步骤的[代码参考](../../commit/307efc2c149dc0569b80d5e85c5aa66bcb5f3716)
 
 
-4. 集成测试
+## 4. 集成Jest单元测试
+
+```bash
+# jest 测试框架
+# @types/jest Jest 类型声明包  TS 声明类型包的大版本最好和 jest 一样。
+# ts-jest 转译器 利用 tsc 来转译 TypeScript  
+# ts-node  写完代码之后要用 tsc 作编译，之后再用 Node.js 来跑，这样比较麻烦，所以我们会用 ts-node 来直接跑 ts 代码，省去了编译阶段。
+# jest-environment-jsdom dom操作
+
+pnpm add -D jest @types/jest ts-jest ts-node jest-environment-jsdom @testing-library/react @testing-library/user-event @testing-library/jest-dom @types/testing-library__jest-dom identity-obj-proxy @testing-library/dom @types/node
+
+# 初始化jest 配置
+npx jest --init
+```
