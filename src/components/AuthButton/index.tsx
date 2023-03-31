@@ -9,7 +9,7 @@ type Props = ButtonProps
 // 身份文案 Mapper
 const mapper: Record<UserRoleType, string> = {
   user: '普通用户',
-  admin: '管理员',
+  admin: '管理员'
 }
 
 const AuthButton: FC<Props> = (props) => {
