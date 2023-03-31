@@ -203,6 +203,7 @@ import '@testing-library/jest-dom/extend-expect'
 
 既然我们在 jest 配置了导入模块 alias。 同样的我们也需要在 typescript 的配置中加入相应的 alias, 要不然 typescript 不能解析 jest 的测试代码。
 
+
 同时我们在**tsconfig.json** 中加上 **jest** 的 **typescript** 类型声明。 修改如下：
 
 ```js
@@ -220,8 +221,32 @@ import '@testing-library/jest-dom/extend-expect'
 
 ```
 
-好了，现在 **jest** 基本上已经配置完成了， 我们写个小例子来测试一下。
+并且还需要在 **vite.config.ts** 中加上相应的alias配置.
 
+```ts
+import path from 'path'
+// ... 代码
+export default defineConfig({
+  // ... 代码
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, '/src'),
+    }
+  }
+  // ... 代码
+})
+
+```
+
+好了，现在 **jest** 基本上已经配置完成了， 我们写个小例子来测试一下。[示例代码](../../commit/01090c5f37534210c9606f44f5ad2feb64315424)
+
+现在添加一个React组件的测试 [示例代码](../../commit/01090c5f37534210c9606f44f5ad2feb64315424)
+
+安装依赖如下：
+```bash
+pnpm add axios
+pnpm add -D classnames msw
+```
 
 
 ## 5. 
