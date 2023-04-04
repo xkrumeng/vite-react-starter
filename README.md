@@ -252,7 +252,7 @@ pnpm add -D classnames msw
 ## 5. 集成代码规范相关的工具 eslint stylelint prettier
 
 ```bash
-pnpm add -D eslint prettier stylelint eslint-config-prettier eslint-plugin-prettier stylelint-config-prettier stylelint-config-standard stylelint-order
+pnpm add -D eslint prettier stylelint  eslint-plugin-react@latest @typescript-eslint/eslint-plugin@latestes @typescript-eslint/parser lint-config-prettier eslint-plugin-prettier stylelint-config-prettier stylelint-config-standard stylelint-order
 ```
 
 配置  **prettier** 规则， 在根目录下新建一个 **.prettierrc.cjs** 配置文件， 内容如下：
